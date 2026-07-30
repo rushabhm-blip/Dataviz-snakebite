@@ -271,6 +271,21 @@ body {
     background-color: #ffffff;
 }
 
+.chart-statement-wrapper {
+    margin: 3rem auto 1.5rem;
+    text-align: center;
+    max-width: 760px;
+    padding: 0 1rem;
+}
+
+.chart-statement-text {
+    font-family: var(--font-primary);
+    font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+    font-weight: 400;
+    line-height: 1.6;
+    color: #2D3136;
+}
+
 .graphic-caption {
     font-family: var(--font-primary);
     font-size: 0.8rem;

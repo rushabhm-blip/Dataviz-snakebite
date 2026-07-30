@@ -271,6 +271,104 @@ body {
     color: var(--text-secondary);
 }
 
+/* ==========================================================================
+   SECTION 2: KEY IMPACT STATISTICS & ILLUSTRATIONS
+   ========================================================================== */
+
+.impact-stats-section {
+    padding: 5rem 0 6rem;
+    background-color: var(--bg-main);
+}
+
+.stats-container {
+    max-width: 920px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
+}
+
+/* Center Stat Block */
+.stat-block-center {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.stat-number-title {
+    font-family: var(--font-primary);
+    font-size: clamp(2.4rem, 5.2vw, 3.8rem);
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+}
+
+.stat-subtext {
+    font-family: var(--font-primary);
+    font-size: clamp(1.25rem, 2.5vw, 1.8rem);
+    font-weight: 400;
+    color: #2D3136;
+    margin-top: 0.35rem;
+    line-height: 1.35;
+}
+
+/* Stat Grid Rows (2-Column Alternating) */
+.stat-grid-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3.5rem;
+}
+
+.stat-grid-reverse {
+    flex-direction: row;
+}
+
+.stat-media-col {
+    flex: 1;
+    max-width: 440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stat-content-col {
+    flex: 1;
+    max-width: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.stat-illustration-img {
+    width: 100%;
+    height: auto;
+    max-height: 320px;
+    object-fit: contain;
+    display: block;
+    filter: drop-shadow(0 8px 24px rgba(0,0,0,0.03));
+}
+
+/* Responsive Grid Adaptation */
+@media (max-width: 768px) {
+    .stats-container {
+        gap: 3.5rem;
+    }
+
+    .stat-grid-row, .stat-grid-reverse {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .stat-content-col {
+        align-items: center;
+    }
+
+    .stat-illustration-img {
+        max-height: 250px;
+    }
+}
+
 /* Scroll Animation Utility */
 .reveal-on-scroll {
     opacity: 0;

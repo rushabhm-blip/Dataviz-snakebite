@@ -29,11 +29,10 @@ function initScrollAnimations() {
 
     // Elements to animate on scroll
     const animatedElements = document.querySelectorAll(
-        '.fact-callout-wrapper, .story-section, .hero-content'
+        '.reveal-on-scroll, .story-section, .hero-content'
     );
 
     animatedElements.forEach(el => {
-        el.classList.add('reveal-on-scroll');
         revealObserver.observe(el);
     });
 }

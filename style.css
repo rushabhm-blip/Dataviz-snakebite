@@ -381,6 +381,40 @@ body {
     color: #3A3E45;
 }
 
+/* Section 5: Snake Species Explorer */
+.snake-explorer-section {
+    padding: 5rem 0 4rem;
+    background-color: #ffffff;
+}
+
+.snake-explorer-header {
+    margin-bottom: 2.5rem;
+}
+
+.snake-explorer-lead {
+    font-family: var(--font-primary);
+    font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+    font-weight: 700;
+    color: #1A1D20;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin-bottom: 0.6rem;
+}
+
+.snake-explorer-sub {
+    font-family: var(--font-primary);
+    font-size: clamp(1rem, 2vw, 1.35rem);
+    font-weight: 400;
+    color: #4A5056;
+    line-height: 1.5;
+}
+
+.explorer-iframe {
+    height: 900px;
+    border-radius: 12px;
+    background-color: #F8FAF9;
+}
+
 .graphic-caption {
     font-family: var(--font-primary);
     font-size: 0.8rem;

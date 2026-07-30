@@ -9,46 +9,37 @@
     <meta name="description" content="An interactive data story on snakebites and their impact in India. A silent public health crisis rendered through data visualization and editorial scrollytelling.">
     <meta name="keywords" content="Snakebite, India, Data Visualization, Public Health, Panic vs Poison, Reuters Graphics, Scrollytelling">
     
-    <!-- Google Fonts -->
+    <!-- Google Fonts: Google Sans Flex & Plus Jakarta Sans / Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Inter:wght@300;400;500;600;700;800&family=Space+Mono:ital,wght@0,400;0,700&display=swap" rel="stylesheet">
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Main Container -->
+    <!-- Main Article Container -->
     <main class="article-container">
         
         <!-- Header / Hero Section -->
         <header class="hero-section" id="hero">
             
-            <!-- Optional GIF / Media Container at Top -->
-            <div class="hero-media-wrapper" id="hero-media-container" style="display: none;">
-                <!-- GIF or Video will be injected here when provided -->
+            <!-- Hero Illustration Image -->
+            <div class="hero-illustration-wrapper">
+                <img src="assets/hero_illustration.png" alt="Illustration of man with turban confronting a snake with a stick" class="hero-illustration-img">
             </div>
 
             <div class="hero-content">
-                <div class="kicker-tag" id="article-kicker">
-                    <span class="dot-indicator"></span> THE SILENT CRISIS &bull; SPECIAL DATA INVESTIGATION
-                </div>
-
+                <!-- Main Title: Panic vs Poison -->
                 <h1 class="main-title" id="main-title">
-                    Panic <span class="vs-text">vs</span> Poison
+                    <span class="title-panic">Panic</span> <span class="title-vs">vs</span> <span class="title-poison">Poison</span>
                 </h1>
 
-                <!-- Centered Fact Callout Section -->
-                <div class="fact-callout-wrapper" id="fact-callout">
-                    <div class="fact-quote-mark" aria-hidden="true">&ldquo;</div>
-                    <blockquote class="fact-statement">
-                        India is the <strong>snakebite capital</strong> of the world, yet snakebites remain a <strong>neglected public health crisis</strong>. The sheer scale of casualties requires immediate visual impact.
-                    </blockquote>
-                    <div class="fact-divider">
-                        <span class="fact-badge">KEY FACT</span>
-                    </div>
-                </div>
+                <!-- Centered Fact Statement -->
+                <p class="hero-statement" id="hero-statement">
+                    India is the <strong class="text-highlight-red">snakebite capital of the world</strong>, yet snakebites remain a neglected public health crisis. The sheer scale of casualties requires immediate visual impact.
+                </p>
             </div>
 
             <!-- Subtle Scroll Indicator -->
@@ -58,14 +49,13 @@
             </div>
         </header>
 
-        <!-- Section 1 Container: Interactive Illustration Space -->
+        <!-- Section 1 Container: Interactive Map Visualization -->
         <section class="story-section" id="section-interactive-1">
             <div class="section-container">
-                <div class="graphic-header">
-                    <span class="graphic-meta-kicker">FIGURE 1.0 &bull; GLOBAL MORTALITY DISTRIBUTION</span>
-                    <h2 class="graphic-title">The Unequal Geography of Snakebite Fatalities</h2>
+                <div class="graphic-header text-center">
+                    <h2 class="graphic-title">Death Rate from Venomous Snakes</h2>
                     <p class="graphic-subtitle">
-                        Estimated annual death rate from venomous snakes per 100,000 people worldwide (2019). Hover or tap on any country to explore localized mortality data.
+                        Estimated annual number of deaths per 100,000 people
                     </p>
                 </div>
 
@@ -73,13 +63,13 @@
                 <div class="illustration-slot active-visualization" id="illustration-slot-1">
                     <iframe 
                         src="snakebite_map.html" 
-                        title="Global Snakebite Death Rate Map"
+                        title="Global Death Rate from Venomous Snakes"
                         class="interactive-iframe"
                         loading="lazy">
                     </iframe>
                 </div>
 
-                <div class="graphic-caption">
+                <div class="graphic-caption text-center">
                     <span class="source-label">Source:</span> Global Burden of Disease / Institute for Health Metrics and Evaluation (IHME) &bull; Interactive Choropleth Map
                 </div>
             </div>

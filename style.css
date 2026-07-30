@@ -415,6 +415,18 @@ body {
     background-color: #F8FAF9;
 }
 
+/* Section 6: Diversity Spectrum */
+.diversity-section {
+    padding: 3rem 0 4rem;
+    background-color: #ffffff;
+}
+
+.diversity-iframe {
+    height: 780px;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+
 .graphic-caption {
     font-family: var(--font-primary);
     font-size: 0.8rem;

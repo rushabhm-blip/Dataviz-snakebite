@@ -8,7 +8,7 @@
     /* Color Palette matching reference graphic */
     --bg-main: #FFFFFF;              /* Clean white background */
     --bg-card: #FFFFFF;              /* Pure white card backgrounds */
-    --bg-subtle: #F8F9FA;            /* Subtle light grey tint */
+    --bg-subtle: #FFFFFF;            /* Pure white background */
     
     --text-primary: #1A1D20;         /* Deep charcoal ink */
     --text-secondary: #4A5056;       /* Subhead slate text */
@@ -40,7 +40,7 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
-    background-color: var(--bg-main);
+    background-color: #ffffff !important;
     color: var(--text-primary);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -50,7 +50,7 @@ body {
     font-family: var(--font-primary);
     line-height: 1.6;
     overflow-x: hidden;
-    background-color: var(--bg-main);
+    background-color: #ffffff !important;
 }
 
 /* --- Layout Container --- */
@@ -259,6 +259,18 @@ body {
     background-color: transparent;
 }
 
+.chart-slot {
+    border: none;
+    box-shadow: none;
+    min-height: 720px;
+    background-color: #ffffff;
+}
+
+.chart-iframe {
+    height: 740px;
+    background-color: #ffffff;
+}
+
 .graphic-caption {
     font-family: var(--font-primary);
     font-size: 0.8rem;
@@ -389,7 +401,7 @@ body {
     border-top: 1px solid var(--border-light);
     padding: 3rem 1.5rem;
     text-align: center;
-    background-color: var(--bg-subtle);
+    background-color: #ffffff !important;
     margin-top: 4rem;
 }
 

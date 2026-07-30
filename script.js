@@ -35,6 +35,22 @@ function initScrollAnimations() {
     animatedElements.forEach(el => {
         revealObserver.observe(el);
     });
+
+    // Observer for embedded chart iframe to trigger animation on scroll reveal
+    const chartSection = document.getElementById('section-mortality-chart');
+    if (chartSection) {
+        const chartObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const iframe = chartSection.querySelector('.chart-iframe');
+                    if (iframe && iframe.contentWindow) {
+                        iframe.contentWindow.postMessage('animateChart', '*');
+                    }
+                }
+            });
+        }, { threshold: 0.2 });
+        chartObserver.observe(chartSection);
+    }
 }
 
 /**

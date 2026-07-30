@@ -286,6 +286,71 @@ body {
     color: #2D3136;
 }
 
+/* Section 4: Panic vs. Reality Styling */
+.panic-reality-section {
+    padding: 4rem 0 6rem;
+    background-color: #ffffff;
+}
+
+.panic-reality-header {
+    margin-bottom: 2rem;
+}
+
+.panic-reality-title {
+    font-family: var(--font-primary);
+    font-size: clamp(2.8rem, 6vw, 4.5rem);
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    margin-bottom: 1.2rem;
+}
+
+.title-panic-italic {
+    font-style: italic;
+    font-weight: 500;
+    color: #A00E30;
+}
+
+.title-vs-dot {
+    font-style: normal;
+    font-weight: 500;
+    color: #333333;
+    margin: 0 0.1em;
+}
+
+.title-reality-bold {
+    font-style: normal;
+    font-weight: 800;
+    color: #3A3E45;
+}
+
+.panic-reality-subtitle {
+    font-family: var(--font-primary);
+    font-size: clamp(1.2rem, 2.4vw, 1.55rem);
+    font-weight: 400;
+    color: #2D3136;
+    max-width: 760px;
+    margin: 0 auto 2rem;
+    line-height: 1.6;
+}
+
+.text-highlight-venomous {
+    font-style: italic;
+    font-weight: 800;
+    color: #C50000;
+}
+
+.text-highlight-nonvenomous {
+    font-style: italic;
+    font-weight: 800;
+    color: #1E8238;
+}
+
+.simulation-iframe {
+    height: 650px;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+
 .graphic-caption {
     font-family: var(--font-primary);
     font-size: 0.8rem;

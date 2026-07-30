@@ -61,13 +61,26 @@
         <!-- Section 1 Container: Interactive Illustration Space -->
         <section class="story-section" id="section-interactive-1">
             <div class="section-container">
-                <!-- Slot for upcoming HTML illustration -->
-                <div class="illustration-slot" id="illustration-slot-1">
-                    <div class="placeholder-notice">
-                        <div class="pulse-icon"></div>
-                        <p class="notice-title">Interactive Illustration Pending</p>
-                        <p class="notice-sub">The interactive HTML visualization for Section 1 will be embedded here.</p>
-                    </div>
+                <div class="graphic-header">
+                    <span class="graphic-meta-kicker">FIGURE 1.0 &bull; GLOBAL MORTALITY DISTRIBUTION</span>
+                    <h2 class="graphic-title">The Unequal Geography of Snakebite Fatalities</h2>
+                    <p class="graphic-subtitle">
+                        Estimated annual death rate from venomous snakes per 100,000 people worldwide (2019). Hover or tap on any country to explore localized mortality data.
+                    </p>
+                </div>
+
+                <!-- Interactive Visualization Frame -->
+                <div class="illustration-slot active-visualization" id="illustration-slot-1">
+                    <iframe 
+                        src="snakebite_map.html" 
+                        title="Global Snakebite Death Rate Map"
+                        class="interactive-iframe"
+                        loading="lazy">
+                    </iframe>
+                </div>
+
+                <div class="graphic-caption">
+                    <span class="source-label">Source:</span> Global Burden of Disease / Institute for Health Metrics and Evaluation (IHME) &bull; Interactive Choropleth Map
                 </div>
             </div>
         </section>
